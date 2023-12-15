@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>BuscoChamba</title>
 </head>
 <body>
-
+    <div class="form-container">
+        <form>
+            <div class="form-section form-names">
+                <i class="material-icons">person</i>
+                <div class="form-names-inputs">
+                    <input type="text" id="fname" name="fname" placeholder="Nombre">
+                    <input type="text" id="lname" name="lname" placeholder="Apellidos">
+                </div>
+            </div>
+            <div class="form-occupation form-section">
+                <i class="material-icons">location_city</i>
+                <div class="form-occupation-inputs">
+                    <input type="text" name="company" placeholder="Compañía">
+                    <input type="text" name="position" placeholder="Puesto">
+                </div>
+            </div>
+            <div class="form-email form-section">
+                <i class="material-icons">email</i>
+                <input type="email" name="email" placeholder="Correo electronico">
+            </div>
+            <div class="form-contact form-section">
+                <i class="material-icons">phone</i>
+                <div class="form-contact-inputs">
+                    <select name="pRegion">
+                        <option value="MX">🇲🇽</option>
+                        <option value="US">🇺🇸</option>
+                        <option value="CD">🇨🇦</option>
+                        <option value="BR">🇧🇷</option>
+                      </select>
+                    <input type="text" name="phone" placeholder="Teléfono">
+                    <input type="text" name="plabel" placeholder="Lada">
+                </div>
+            </div>
+            <div class="form-birth form-section">
+                <i class="material-icons">cake</i>
+                <div class="form-birth-inputs">
+                    <select name="bMonth">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                      </select>
+                    <input type="text" name="Day" placeholder="Día">
+                    <input type="text" name="Year" placeholder="Año (Opcional)">
+                </div>
+            </div>
+            <div class="form-note form-section">
+                <i class="material-icons">sms</i>
+                <textarea name="note" placeholder="Notas"></textarea>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
