@@ -8,11 +8,18 @@ body{
     background-color: #f8ffad;
 }
 
+.upper-page{
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
 .form-container{
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .form-section{
@@ -42,10 +49,43 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.form-section input, .form-section textarea, .form-section select{
+.form-section input, .form-section textarea, .form-section select, form button{
     font-size: 18px;
     border-radius: 5px;
     border: none;
     padding: 8px 10px;
     box-sizing: border-box;
 }
+
+.form-section textarea{
+    height: 4em;
+    resize: none;
+}
+
+@media (max-width: 900px) {
+
+    .form-names-inputs, .form-occupation-inputs{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-container{
+        height: 90vh;
+    }
+
+    .upper-page h1{
+        font-size: 75%;
+    }
+
+    .form-contact-inputs, .form-birth-inputs{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-contact-inputs:last-child, .form-birth-inputs:last-child{
+        grid-column: 1 / -1;
+    }
+
+  }

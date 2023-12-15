@@ -9,25 +9,29 @@
     <title>BuscoChamba</title>
 </head>
 <body>
+    <div class="upper-page">
+        <img src="https://images.cooltext.com/5683170.png" width="50%" alt="BuscoChamba Logo" />
+        <h1>Tu lugar para buscar chamba</h1>
+    </div>
     <div class="form-container">
         <form>
             <div class="form-section form-names">
                 <i class="material-icons">person</i>
                 <div class="form-names-inputs">
-                    <input type="text" id="fname" name="fname" placeholder="Nombre">
-                    <input type="text" id="lname" name="lname" placeholder="Apellidos">
+                    <input type="text" id="fname" name="fname" placeholder="Nombre" required>
+                    <input type="text" id="lname" name="lname" placeholder="Apellidos" required>
                 </div>
             </div>
             <div class="form-occupation form-section">
                 <i class="material-icons">location_city</i>
                 <div class="form-occupation-inputs">
-                    <input type="text" name="company" placeholder="Compañía">
-                    <input type="text" name="position" placeholder="Puesto">
+                    <input type="text" name="company" placeholder="Compañía" required>
+                    <input type="text" name="position" placeholder="Puesto" required>
                 </div>
             </div>
             <div class="form-email form-section">
                 <i class="material-icons">email</i>
-                <input type="email" name="email" placeholder="Correo electronico">
+                <input type="email" name="email" placeholder="Correo electronico" required>
             </div>
             <div class="form-contact form-section">
                 <i class="material-icons">phone</i>
@@ -38,7 +42,7 @@
                         <option value="CD">🇨🇦</option>
                         <option value="BR">🇧🇷</option>
                       </select>
-                    <input type="text" name="phone" placeholder="Teléfono">
+                    <input type="tel" name="phone" placeholder="Teléfono" required>
                     <input type="text" name="plabel" placeholder="Lada">
                 </div>
             </div>
@@ -59,7 +63,7 @@
                         <option value="11">Noviembre</option>
                         <option value="12">Diciembre</option>
                       </select>
-                    <input type="text" name="Day" placeholder="Día">
+                    <input type="text" name="Day" placeholder="Día" required>
                     <input type="text" name="Year" placeholder="Año (Opcional)">
                 </div>
             </div>
@@ -67,6 +71,7 @@
                 <i class="material-icons">sms</i>
                 <textarea name="note" placeholder="Notas"></textarea>
             </div>
+            <button type="button" onclick="alert('El botón no funciona, tendrás que buscar chamba por otro lado')">Registrarme</button>
         </form>
     </div>
 </body>
