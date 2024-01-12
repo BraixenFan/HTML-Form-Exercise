@@ -1,3 +1,6 @@
+const body = document.body;
+const formulary = body.getElementsByClassName("form-container")
+
 function submitForm(form) {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => {
@@ -8,4 +11,9 @@ function submitForm(form) {
       }
     })
     .then(data => console.log(data))
+}
+
+function toggleForm() {
+  console.log(formulary);
+  formulary[0].classList.toggle("hidden");
 }

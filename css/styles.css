@@ -90,6 +90,10 @@ body{
     resize: none;
 }
 
+.hidden{
+    display: none;
+}
+
 @media (max-width: 900px) {
 
     .form-names-inputs, .form-occupation-inputs{
