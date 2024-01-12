@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,13 +9,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>BuscoChamba</title>
 </head>
+
 <body>
+    <script src="js/app.js"></script>
     <div class="upper-page">
         <img src="https://images.cooltext.com/5683170.png" width="50%" alt="BuscoChamba Logo" />
         <h1>Tu lugar para buscar chamba</h1>
     </div>
     <div class="form-container">
-        <form>
+        <form name="mainForm" action="https://jsonplaceholder.typicode.com/users" method="post">
             <div class="form-section form-names">
                 <i class="material-icons">person</i>
                 <div class="form-names-inputs">
@@ -41,7 +44,7 @@
                         <option value="US">🇺🇸</option>
                         <option value="CD">🇨🇦</option>
                         <option value="BR">🇧🇷</option>
-                      </select>
+                    </select>
                     <input type="tel" name="phone" placeholder="Teléfono" required>
                     <input type="text" name="plabel" placeholder="Lada">
                 </div>
@@ -62,7 +65,7 @@
                         <option value="10">Octubre</option>
                         <option value="11">Noviembre</option>
                         <option value="12">Diciembre</option>
-                      </select>
+                    </select>
                     <input type="text" name="Day" placeholder="Día" required>
                     <input type="text" name="Year" placeholder="Año (Opcional)">
                 </div>
@@ -71,8 +74,9 @@
                 <i class="material-icons">sms</i>
                 <textarea name="note" placeholder="Notas"></textarea>
             </div>
-            <button type="button" onclick="alert('El botón no funciona, tendrás que buscar chamba por otro lado')">Registrarme</button>
+            <button type="button" onclick="submitForm(this.form)">Registrarme</button>
         </form>
     </div>
 </body>
+
 </html>
